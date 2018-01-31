@@ -11,6 +11,7 @@ class NewUser extends Component{
             img: '',
             desc: ''
         }
+
     }
     
     // insert addUser
@@ -52,7 +53,7 @@ class NewUser extends Component{
                         this.state.id >= 0
                         ?
                         <span>
-                            <button className='delete-button'>Delete User</button>
+                                <button className='delete-button' onChange={this.deleteUser}>Delete User</button>
                             <button type='submit'>Update</button>
                         </span>
                         :
